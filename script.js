@@ -12,6 +12,31 @@ while (k < indice) {
 
 console.log(`Resultado final: ${soma}`);
 
+//Questão 2
+
+function isFibonacci(num) {
+  let a = 0, b = 1;
+  if (num === a || num === b) return true;
+  let c = a + b;
+  
+  while (c <= num) {
+      if (c === num) return true;
+      a = b;
+      b = c;
+      c = a + b;
+      console.log(c);
+  }
+  return false;
+}
+const num = 21; 
+
+if (isFibonacci(num)) {
+  console.log(num + " pertence à sequência de Fibonacci.");
+} else {
+  console.log(num + " não pertence à sequência de Fibonacci.");
+}
+
+
 //Questao 3
 const faturamentoMensal = [1000, 2000, 1400.00, 2500.00, 5000, 3000, 2400.00]
 
